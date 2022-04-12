@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7831f01c-fb10-4f33-9c97-23c1f2099f03": {
+      "ProjectGuid": "7831f01c-fb10-4f33-9c97-23c1f2099f03",
+      "DisplayName": "ModularisTestUnitTests",
+      "ColorIndex": 0
+    },
+    "f5ffe68a-fe5c-44a4-be85-2548cb13972e": {
+      "ProjectGuid": "f5ffe68a-fe5c-44a4-be85-2548cb13972e",
+      "DisplayName": "ModularisTest",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
