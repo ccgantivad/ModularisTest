@@ -29,10 +29,10 @@ namespace ModularisTest.Logic
             }
             return _instance;
         }
-        public string Log(LoggerModel log)
+        public void Log(LoggerModel log)
         {
-             string result = Validate(log)? _logger.DoLogger(): null;
-            return result;
+           if(Validate(log)) _logger.DoLogger(log);
+           
         }
 
         public bool Validate(LoggerModel log)

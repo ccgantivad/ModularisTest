@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ModularisTest.Bussines;
+using ModularisTest.Models;
 
 namespace ModularisTest.Logger
 {
     public sealed class Warning : ILogger 
     {
-        public string DoLogger()
-        {            
-            return this.ToString();
+        public void DoLogger(LoggerModel log)
+        {
+            Print print = Print.GetInstance();
+            print.PrintMethod(log, "Message");
         }
         private Warning() { }
         private static Warning _instance;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModularisTest.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace ModularisTest.Logger
 {
     public interface ILogger
     {
-        string DoLogger();
+        void DoLogger( LoggerModel log);
 
 
     }

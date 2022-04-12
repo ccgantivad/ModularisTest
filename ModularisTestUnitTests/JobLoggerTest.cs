@@ -1,5 +1,5 @@
-﻿using ModularisTest;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ModularisTest;
 using ModularisTest.Models;
 
 namespace ModularisTestUnitTests
@@ -21,8 +21,12 @@ namespace ModularisTestUnitTests
             log.message = TestMessage;
 
             jobLogger.LogMessage(log);
-            
-           
+            log.message = ErrorMessage;
+            jobLogger.LogError(log);
+            log.message = WarningMessage;
+            jobLogger.LogWarning(log);
+
+
         }
     }
 }

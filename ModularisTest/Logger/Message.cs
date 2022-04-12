@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ModularisTest.Bussines;
+using ModularisTest.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +10,10 @@ namespace ModularisTest.Logger
 {
     public sealed class Message : ILogger
     {
-        public string DoLogger()
-        {            
-            return this.ToString();
+        public void DoLogger (LoggerModel log)
+        {
+            Print print = Print.GetInstance();
+            print.PrintMethod(log, "Message");
         }
         private Message() { }
         private static Message _instance;

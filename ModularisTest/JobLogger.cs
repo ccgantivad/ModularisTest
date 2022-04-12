@@ -41,9 +41,6 @@ namespace ModularisTest
             }
             logger.SetLogger(_logger);
             logger.Log(log);
-            Print print=Print.GetInstance();
-            if (!String.IsNullOrEmpty(Type)) print.PrintMethod(log, Type);
-
         }
 
         public  void LogError(LoggerModel error)
